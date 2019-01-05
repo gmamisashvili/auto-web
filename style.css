@@ -170,13 +170,19 @@
   width: 100%;
 }
 
+.map-iframe {
+  height: 900px;
+  width: 100%;
+}
+
 .form-div {
   padding: 5% 5% 5% 15%;
 }
 
 .contact-form-wrapper {
   position: absolute;
-  width: 68%;
+  top: 55%;
+  width: 80%;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -188,6 +194,7 @@
   background-color: #fff;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: lighter;
+  height: 470px;
 }
 
 .contact-information {
@@ -227,6 +234,8 @@
 
 .contact-form {
   width: 67%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: lighter;
 }
 
 .contact-form-header {

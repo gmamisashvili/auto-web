@@ -224,13 +224,13 @@
 .contact-information-header {
   font-family: "RobotoCondensed", sans-serif;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 2.55vw;
   padding-left: 10%;
   padding-top: 10%;
 }
 
 .click-to-view {
-  font-size: 50px;
+  font-size: 2.55vw;
   text-align: center;
   font-weight: bold;
   width: 50%;
@@ -246,7 +246,7 @@
 
 .form-header {
   letter-spacing: 5px;
-  font-size: 50px;
+  font-size: 2.55vw;
   font-family: "RobotoCondensed", sans-serif;
   font-weight: bold;
 }
@@ -257,12 +257,137 @@
 
 .form-control {
   margin-top: 10%;
+  border: none;
   border-radius: 0%;
   background: #f2f2f2;
 }
 
 .form-control:first-child {
   margin-top: 0%;
+}
+
+/* custom radio/check buttons */
+
+.form-check {
+  padding: 0;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 7px;
+  left: 7px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #020202;
+}
+
+/* .. */
+
+/* The container */
+.container-check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark-check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark-check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-check input:checked ~ .checkmark-check:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-check .checkmark-check:after {
+  left: 6px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* custom radio/check buttons */
+
+.form-control-textarea {
+  resize: none;
 }
 
 .right-side {
@@ -285,6 +410,34 @@
   font-weight: 300;
 }
 
+.submit-button-div {
+  display: flex;
+  margin-top: 10%;
+  justify-content: flex-end;
+  margin-right: 10%;
+}
+
+.submit-button {
+  background-color: black;
+  color: #fff;
+  font-family: "RobotoCondensed", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.social-netoworks-reponsive {
+  display: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sn-icons-responsive {
+  width: 15%;
+}
+
+.social-networks-responsive {
+  text-align: end;
+}
 /* contact section */
 
 @keyframes busdrive {
@@ -299,25 +452,62 @@
 /* media queries */
 
 @media only screen and (max-width: 1500px) {
-  .contact-information {
-    display: none;
-  }
-
   .corner-garage-header {
     font-size: 50px;
   }
   .form-header {
     font-size: 50px;
   }
-
-  .main-form {
-    width: 100%;
-  }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
+  .contact-information {
+    display: none;
+  }
+
+  .map-container {
+    width: 100%;
+  }
+
+  .main-form {
+    padding: 5% 0 0 0;
+    width: 100%;
+  }
+
+  .form-header {
+    text-align: center;
+  }
+
+  .form-inputs-wrapper {
+    padding-left: 15%;
+    margin-top: 3%;
+  }
+
   .garage-options-row {
     padding: 0px 5%;
+  }
+  .map-iframe {
+    height: 573px;
+  }
+
+  .contact-form-wr {
+    background-color: #ebe8de;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  .social-netoworks-reponsive {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+  }
+
+  .click-to-vew-responsive {
+    font-size: 50px;
+    font-family: "RobotoCondensed", sans-serif;
+    font-weight: bold;
   }
 }
 /* media queries */

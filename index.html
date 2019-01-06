@@ -153,85 +153,67 @@
                     placeholder="subject"
                   />
                   <textarea
-                    class="form-control"
+                    class="form-control form-control-textarea"
                     id="exampleFormControlTextarea1"
                     rows="3"
                     placeholder="text"
+                    resize: none;
                   ></textarea>
                 </div>
                 <div class="right-side">
                   <div class="sex flex">
                     <div class="form-check">
-                      <input
-                        class="form-check-input"
+                      <label class="container form-check-label">male
+                        <input class="form-check-input"
                         type="radio"
                         name="exampleRadios"
                         id="male"
-                        value="option1"
-                      />
-                      <label class="form-check-label" for="male"> male </label>
+                        value="option1">
+                        <span class="checkmark"></span>
+                      </label>
                     </div>
                     <div class="form-check female">
-                      <input
-                        class="form-check-input"
+                      <label class="container form-check-label">female
+                        <input class="form-check-input"
                         type="radio"
                         name="exampleRadios"
                         id="female"
-                        value="option2"
-                      />
-                      <label class="form-check-label" for="female">
-                        female
+                        value="option2">
+                        <span class="checkmark"></span>
                       </label>
                     </div>
                   </div>
                   <div class="newsetller">
                     <p class="newsetller-header">Sign up for newsletter:</p>
                     <div class="form-check ">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        id="images"
-                        value="option1"
-                      />
-                      <label class="form-check-label" for="images"
-                        >recive images</label
-                      >
+                      <label class="container-check form-check-label" for="images">recive images
+                        <input type="checkbox" id="images" class="form-check-input" value="option1">
+                        <span class="checkmark-check " for='images'></span>
+                      </label>
                     </div>
                     <div class="form-check ">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        id="promotions"
-                        value="option1"
-                      />
-                      <label class="form-check-label" for="promotions"
-                        >recive promotions</label
-                      >
+                    <label class="container-check form-check-label" for="promotions">recive promotions
+                      <input type="checkbox" id="promotions" class="form-check-input" value="option2">
+                      <span class="checkmark-check " for='promotions'></span>
+                    </label>
                     </div>
                     <div class="form-check ">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        id="updates"
-                        value="option1"
-                      />
-                      <label class="form-check-label" for="updates"
-                        >recive updates</label
-                      >
+                    <label class="container-check form-check-label" for="updates">recive updates
+                      <input type="checkbox" id="updates" class="form-check-input" value="option3">
+                      <span class="checkmark-check " for='updates'></span>
+                    </label>
                     </div>
                     <div class="form-check ">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        id="offers"
-                        value="option1"
-                      />
-                      <label class="form-check-label" for="offers"
-                        >recive job offers</label
-                      >
+                      <label class="container-check form-check-label" for="offers">recive job offers
+                        <input type="checkbox" id="offers" class="form-check-input" value="option4">
+                        <span class="checkmark-check " for='offers'></span>
+                      </label>
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="submit-button-div">
+                <button type="submit" class="submit-button">send</button>
               </div>
             </form>
           </div>
@@ -239,9 +221,39 @@
             <p class="copyright-p">© copyright 2017</p>
             <p class="owner-p">created by: Giorgi mamisashvili</p>
           </div>
+          <div class="social-netoworks-reponsive">
+            <p class="click-to-vew-responsive">click to view</p>
+            <div class="social-networks-responsive text-end">
+              <a href="#" class="google-responsive"
+                ><img
+                  class="google-img-responsive sn-icons-responsive"
+                  src="pics/svg/google-logo.svg"
+                  alt="google+"
+              /></a>
+              <a href="#" class="fb-responsive"
+                ><img
+                  class="fb-img-responsive sn-icons-responsive"
+                  src="pics/svg/fb-logo.svg"
+                  alt="facebook"
+              /></a>
+              <a href="#" class="twitter-responsive">
+                <img
+                  src="pics/svg/twitter-logo.svg"
+                  alt="twitter"
+                  class="twitter-img-responsive sn-icons-responsive"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="footer-div">
+        <p class="footer-copyright">© copyright 2017</p>
+        <p class="footer-owner">created by:Giorgi Mamisashvili</p>
+      </div>
+    </footer>
   </body>
   <script
     src="https://code.jquery.com/jquery-3.3.1.js"

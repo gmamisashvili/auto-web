@@ -16,3 +16,33 @@ $(document).ready(function() {
     $(".carousel-control-next").show();
   });
 });
+
+$("form").submit(function(event) {
+  let elements = [
+    $("#exampleInputName"),
+    $("#exampleInputEmail"),
+    $("#exampleInputSubject"),
+    $("#exampleFormControlTextarea1")
+  ];
+  let errors = [
+    $(".name-error"),
+    $(".email-error"),
+    $(".subject-error"),
+    $(".textarea-error")
+  ];
+
+  for (i = 0; i < elements.length; i++) {
+    if (elements[i].val() == "") {
+      errors[i].show();
+    } else {
+      errors[i].hide();
+    }
+  }
+  if ($("#female").checke() == false && $("#male").checked() == false) {
+    $(".gender-error").show();
+  } else {
+    $(".gender-error").hide();
+  }
+});
+// form-error-p
+// form-control

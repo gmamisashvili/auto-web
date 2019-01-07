@@ -397,10 +397,6 @@ html {
   margin-left: 20%;
 }
 
-.sex {
-  flex-wrap: wrap;
-}
-
 .copyright {
   margin-top: 10px;
   display: flex;
@@ -454,8 +450,15 @@ html {
 }
 
 .form-error {
+  display: none;
   color: red;
   font-family: roboto;
+  font-size: 11px;
+}
+
+.gender-error {
+  top: 80%;
+  width: max-content;
 }
 
 /* footer */

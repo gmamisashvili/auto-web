@@ -29,7 +29,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
   </head>
   <body>
-    <section class="home">
+    <section class="home" id="home">
       <div class="main-pic relative">
         <div
           id="carouselExampleControls"
@@ -98,15 +98,19 @@
         <nav class="nav">
           <div class="nav-list">
             <ul class="nav-ul">
-              <li class="home">HOME</li>
-              <li class="services">SERVICES</li>
-              <li class="contact">CONTACT</li>
+              <li class="home"><a class="nav-links" href="#home">HOME</a></li>
+              <li class="services">
+                <a class="nav-links" href="#corner-garage">SERVICES</a>
+              </li>
+              <li class="contact">
+                <a class="nav-links" href="#contact-section">CONTACT</a>
+              </li>
             </ul>
           </div>
         </nav>
       </div>
     </section>
-    <section class="corner-garage">
+    <section class="corner-garage" id="corner-garage">
       <h1 class="corner-garage-header">The corner garage for collector cars</h1>
       <div class="row m-0 garage-options-row">
         <div
@@ -142,7 +146,7 @@
         <img src="pics/svg/bus.svg" alt="bus" class="bus" />
       </div>
     </section>
-    <section class="contact-section">
+    <section class="contact-section" id="contact-section">
       <div class="map-container relative">
         <iframe
           class="map-iframe"
@@ -162,19 +166,23 @@
                   click to <br />
                   &nbsp; view
                 </p>
-                <a href="#" class="google"
+                <a href="http://www.google.com" target="_blank" class="google"
                   ><img
                     class="google-img sn-icons"
                     src="pics/svg/google-logo.svg"
                     alt="google+"
                 /></a>
-                <a href="#" class="fb"
+                <a href="http://www.fb.com" target="_blank" class="fb"
                   ><img
                     class="fb-img sn-icons"
                     src="pics/svg/fb-logo.svg"
                     alt="facebook"
                 /></a>
-                <a href="#" class="twitter">
+                <a
+                  href="https://www.twitter.com"
+                  target="_blank"
+                  class="twitter"
+                >
                   <img
                     src="pics/svg/twitter-logo.svg"
                     alt="twitter"
@@ -314,19 +322,26 @@
           <div class="social-netoworks-reponsive">
             <p class="click-to-vew-responsive">click to view</p>
             <div class="social-networks-responsive text-end">
-              <a href="#" class="google-responsive"
+              <a
+                href="https://www.google.com"
+                target="_blank"
+                class="google-responsive"
                 ><img
                   class="google-img-responsive sn-icons-responsive"
                   src="pics/svg/google-logo.svg"
                   alt="google+"
               /></a>
-              <a href="#" class="fb-responsive"
+              <a href="https://www.fb.com" target="_blank" class="fb-responsive"
                 ><img
                   class="fb-img-responsive sn-icons-responsive"
                   src="pics/svg/fb-logo.svg"
                   alt="facebook"
               /></a>
-              <a href="#" class="twitter-responsive">
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                class="twitter-responsive"
+              >
                 <img
                   src="pics/svg/twitter-logo.svg"
                   alt="twitter"

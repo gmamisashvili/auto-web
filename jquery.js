@@ -17,7 +17,8 @@ $(document).ready(function() {
   });
 });
 
-$("form").submit(function(event) {
+$(".main-form").submit(function(e) {
+  e.preventDefault();
   let elements = [
     $("#exampleInputName"),
     $("#exampleInputEmail"),
@@ -38,11 +39,16 @@ $("form").submit(function(event) {
       errors[i].hide();
     }
   }
-  if ($("#female").checke() == false && $("#male").checked() == false) {
+
+  document.getElementById("male");
+  document.getElementById("female");
+
+  if (!male.checked && !female.checked) {
     $(".gender-error").show();
   } else {
     $(".gender-error").hide();
   }
 });
+
 // form-error-p
 // form-control

@@ -4,15 +4,15 @@ $(document).ready(function() {
     $(".main-pic-name").attr("src", "pics/svg/auto-name-red.svg");
     $(".nav-toggler").toggle();
     $(".nav-toggler-close").show();
-    $(".slider-left").hide();
-    $('.slider-right').hide();
+    $(".carousel-control-prev").hide();
+    $(".carousel-control-next").hide();
   });
   $(".nav-toggler-close").click(function() {
     $(".nav").toggle();
     $(".main-pic-name").attr("src", "pics/svg/auto-name.svg");
     $(".nav-toggler").toggle();
     $(".nav-toggler-close").hide();
-    $(".slider-left").show();
-    $('.slider-right').show();
+    $(".carousel-control-prev").show();
+    $(".carousel-control-next").show();
   });
 });

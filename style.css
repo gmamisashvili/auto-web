@@ -38,24 +38,6 @@
   left: 30px;
 }
 
-.car-date {
-  bottom: 10%;
-  right: 5%;
-  color: #ffffff;
-  font-size: 3.75vw;
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: bold;
-}
-
-.car-info {
-  bottom: 5%;
-  right: 5%;
-  color: #ffffff;
-  font-size: 2.03vw;
-  font-family: "Roboto", sans-serif;
-  font-weight: lighter;
-}
-
 .slider-left {
   position: absolute;
   top: 40%;
@@ -75,8 +57,8 @@
 .nav-toggler {
   width: 2.1%;
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 7%;
+  right: 5%;
   cursor: pointer;
 }
 
@@ -590,3 +572,50 @@
   }
 }
 /* media queries */
+
+.carousel-control-next {
+  background-image: url("./pics/svg/slider-right.svg");
+  background-repeat: no-repeat;
+  width: 5.41%;
+  height: 16.41%;
+  position: absolute;
+  margin: auto 0;
+  right: 0;
+  opacity: 1;
+  cursor: pointer;
+}
+.carousel-control-prev {
+  background-image: url("./pics/svg/slider-left.svg");
+  background-repeat: no-repeat;
+  width: 5.41%;
+  height: 16.41%;
+  position: absolute;
+  margin: auto 0;
+  right: 0;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.carousel-caption {
+  text-align: end;
+  right: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.carousel-caption-date {
+  padding-right: 5%;
+  color: #ffffff;
+  font-size: 3.75vw;
+  font-family: "RobotoCondensed", sans-serif;
+  font-weight: bold;
+}
+
+.carousel-caption-name {
+  padding-right: 5%;
+  color: #ffffff;
+  font-size: 2.03vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}

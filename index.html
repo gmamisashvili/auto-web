@@ -14,7 +14,11 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700|Roboto:100,300"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700"
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
@@ -58,21 +62,27 @@
     <section class="corner-garage">
       <h1 class="corner-garage-header">The corner garage for collector cars</h1>
       <div class="row m-0 garage-options-row">
-        <div class="garage-modify-div garage-option-divs col-md-4 col-sm-12 col-12">
+        <div
+          class="garage-modify-div garage-option-divs col-md-4 col-sm-12 col-12"
+        >
           <img
             src="pics/svg/garage-modify.svg"
             alt="modify"
             class="garage-modify garage-options"
           />
         </div>
-        <div class="garage-buy-div garage-option-divs col-md-4 col-sm-12 col-12">
+        <div
+          class="garage-buy-div garage-option-divs col-md-4 col-sm-12 col-12"
+        >
           <img
             src="pics/svg/garage-buy.svg"
             alt="buy"
             class="garage-buy garage-options"
           />
         </div>
-        <div class="garage-repair-div garage-option-divs col-md-4 col-sm-12 col-12">
+        <div
+          class="garage-repair-div garage-option-divs col-md-4 col-sm-12 col-12"
+        >
           <img
             src="pics/svg/garage-repair.svg"
             alt="repair"
@@ -92,20 +102,19 @@
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.133684704483!2d44.78366706416217!3d41.717634037791306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472d4fa5b02d7%3A0xced15c2c7992ceb5!2sGeoLab!5e0!3m2!1sen!2sge!4v1546022772205"
           width="800"
           height="600"
-          frameborder="0"
           style="border:0"
           allowfullscreen
-          class="map-frame"
         ></iframe>
         <div class="contact-form-wrapper">
           <div class="contact-form-wr mx-auto">
             <div class="contact-information p-0 ">
               <p class="contact-information-header">CONTACT INFORMATION</p>
-              <p class="click-to-view">
-                click to <br />
-                &nbsp view
-              </p>
+
               <div class="social-networks">
+                <p class="click-to-view">
+                  click to <br />
+                  &nbsp; view
+                </p>
                 <a href="#" class="google"
                   ><img
                     class="google-img sn-icons"
@@ -132,24 +141,21 @@
               <div class="form-inputs-wrapper flex">
                 <div class="left-side">
                   <input
-                    type="name"
+                    type="text"
                     class="form-control"
                     id="exampleInputName"
-                    aria-describedby="name"
                     placeholder="name"
                   />
                   <input
                     type="Email"
                     class="form-control"
                     id="exampleInputEmail"
-                    aria-describedby="email"
                     placeholder="email"
                   />
                   <input
-                    type="Subject"
+                    type="text"
                     class="form-control"
                     id="exampleInputSubject"
-                    aria-describedby="subject"
                     placeholder="subject"
                   />
                   <textarea
@@ -157,28 +163,33 @@
                     id="exampleFormControlTextarea1"
                     rows="3"
                     placeholder="text"
-                    resize: none;
                   ></textarea>
                 </div>
                 <div class="right-side">
                   <div class="sex flex">
                     <div class="form-check">
-                      <label class="container form-check-label">male
-                        <input class="form-check-input"
-                        type="radio"
-                        name="exampleRadios"
-                        id="male"
-                        value="option1">
+                      <label class="container form-check-label"
+                        >male
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="exampleRadios"
+                          id="male"
+                          value="option1"
+                        />
                         <span class="checkmark"></span>
                       </label>
                     </div>
                     <div class="form-check female">
-                      <label class="container form-check-label">female
-                        <input class="form-check-input"
-                        type="radio"
-                        name="exampleRadios"
-                        id="female"
-                        value="option2">
+                      <label class="container form-check-label"
+                        >female
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="exampleRadios"
+                          id="female"
+                          value="option2"
+                        />
                         <span class="checkmark"></span>
                       </label>
                     </div>
@@ -186,27 +197,59 @@
                   <div class="newsetller">
                     <p class="newsetller-header">Sign up for newsletter:</p>
                     <div class="form-check ">
-                      <label class="container-check form-check-label" for="images">recive images
-                        <input type="checkbox" id="images" class="form-check-input" value="option1">
-                        <span class="checkmark-check " for='images'></span>
+                      <label
+                        class="container-check form-check-label"
+                        for="images"
+                        >recive images
+                        <input
+                          type="checkbox"
+                          id="images"
+                          class="form-check-input"
+                          value="option1"
+                        />
+                        <span class="checkmark-check "></span>
                       </label>
                     </div>
                     <div class="form-check ">
-                    <label class="container-check form-check-label" for="promotions">recive promotions
-                      <input type="checkbox" id="promotions" class="form-check-input" value="option2">
-                      <span class="checkmark-check " for='promotions'></span>
-                    </label>
+                      <label
+                        class="container-check form-check-label"
+                        for="promotions"
+                        >recive promotions
+                        <input
+                          type="checkbox"
+                          id="promotions"
+                          class="form-check-input"
+                          value="option2"
+                        />
+                        <span class="checkmark-check "></span>
+                      </label>
                     </div>
                     <div class="form-check ">
-                    <label class="container-check form-check-label" for="updates">recive updates
-                      <input type="checkbox" id="updates" class="form-check-input" value="option3">
-                      <span class="checkmark-check " for='updates'></span>
-                    </label>
+                      <label
+                        class="container-check form-check-label"
+                        for="updates"
+                        >recive updates
+                        <input
+                          type="checkbox"
+                          id="updates"
+                          class="form-check-input"
+                          value="option3"
+                        />
+                        <span class="checkmark-check "></span>
+                      </label>
                     </div>
                     <div class="form-check ">
-                      <label class="container-check form-check-label" for="offers">recive job offers
-                        <input type="checkbox" id="offers" class="form-check-input" value="option4">
-                        <span class="checkmark-check " for='offers'></span>
+                      <label
+                        class="container-check form-check-label"
+                        for="offers"
+                        >recive job offers
+                        <input
+                          type="checkbox"
+                          id="offers"
+                          class="form-check-input"
+                          value="option4"
+                        />
+                        <span class="checkmark-check "></span>
                       </label>
                     </div>
                   </div>
@@ -245,14 +288,20 @@
               </a>
             </div>
           </div>
+          <footer class="footer">
+            <div class="copyright-footer">
+              <p class="copyright-footer-p">© copyright 2019</p>
+              <p class="owner-footer-p">created by: Giorgi mamisashvili</p>
+            </div>
+          </footer>
         </div>
       </div>
     </section>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script src="jquery.js"></script>
   </body>
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"
-  ></script>
-  <script src="jquery.js"></script>
 </html>

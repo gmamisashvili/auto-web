@@ -397,6 +397,10 @@ html {
   margin-left: 20%;
 }
 
+.sex {
+  flex-wrap: wrap;
+}
+
 .copyright {
   margin-top: 10px;
   display: flex;
@@ -431,6 +435,7 @@ html {
 .social-networks-responsive {
   text-align: end;
 }
+
 /* contact section */
 
 /* footer */
@@ -446,6 +451,11 @@ html {
 .copyright-footer {
   display: flex;
   justify-content: space-between;
+}
+
+.form-error {
+  color: red;
+  font-family: roboto;
 }
 
 /* footer */

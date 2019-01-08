@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $(".nav-toggler").click("toggle", function() {
-    $(".nav").toggle();
+    $(".nav").toggle(1000);
     $(".main-pic-name").attr("src", "pics/svg/auto-name-red.svg");
     $(".nav-toggler").toggle();
     $(".nav-toggler-close").show();

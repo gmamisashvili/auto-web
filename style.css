@@ -31,8 +31,10 @@ html {
 /* common styles */
 
 /* home */
-.auto-pic {
-  width: 100%;
+.main-img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .main-pic-name {
@@ -40,6 +42,51 @@ html {
   width: 21.4%;
   top: 30px;
   left: 30px;
+}
+
+.red-small-dot {
+  position: absolute;
+  width: 2%;
+  height: 3%;
+  background-color: #ec2024;
+  z-index: 1;
+  border-radius: 50%;
+  transition: height, width 0.4s;
+}
+.red-small-dot:hover {
+  width: 3%;
+  height: 4%;
+}
+
+.white-small-dot {
+  position: absolute;
+  width: 4%;
+  height: 7%;
+  background-color: #ffff;
+  z-index: 1;
+  border-radius: 50%;
+  opacity: 0.4;
+  transition: height, width 0.4s;
+}
+.white-small-dot:hover {
+  width: 6%;
+  height: 9%;
+}
+
+.white-big-dot {
+  position: absolute;
+  width: 8%;
+  height: 12%;
+  background-color: #ffff;
+  z-index: 1;
+  border-radius: 50%;
+  opacity: 0.4;
+  transition: height, width 0.4s;
+}
+
+.white-big-dot:hover {
+  width: 10%;
+  height: 15%;
 }
 
 .slider-left {
@@ -57,6 +104,8 @@ html {
   right: 0;
   cursor: pointer;
 }
+
+/* nav */
 
 .nav-toggler {
   width: 2.1%;
@@ -100,8 +149,6 @@ html {
   line-height: 1;
   margin-bottom: 6%;
 }
-
-/* nav */
 
 .nav {
   display: none;
@@ -475,11 +522,12 @@ html {
 /* media queries */
 
 @media only screen and (max-width: 1500px) {
-  .corner-garage-header {
-    font-size: 50px;
-  }
   .form-header {
     font-size: 50px;
+  }
+
+  .main-img {
+    height: auto;
   }
 }
 
@@ -535,6 +583,9 @@ html {
   }
 }
 @media only screen and (max-width: 768px) {
+  .corner-garage-header {
+    font-size: 50px;
+  }
   .garage-option-divs {
     width: 20%;
     margin-top: 5%;
@@ -602,7 +653,7 @@ html {
 .carousel-control-next {
   background-image: url("./pics/svg/slider-right.svg");
   background-repeat: no-repeat;
-  width: 5.41%;
+  width: 3.8%;
   height: 16.41%;
   position: absolute;
   margin: auto 0;
@@ -613,7 +664,7 @@ html {
 .carousel-control-prev {
   background-image: url("./pics/svg/slider-left.svg");
   background-repeat: no-repeat;
-  width: 5.41%;
+  width: 3.8%;
   height: 16.41%;
   position: absolute;
   margin: auto 0;
@@ -627,7 +678,7 @@ html {
   right: 0;
   left: 0;
   width: 100%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 .carousel-caption-date {

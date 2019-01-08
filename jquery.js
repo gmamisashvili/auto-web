@@ -18,7 +18,6 @@ $(document).ready(function() {
 });
 
 $(".main-form").submit(function(e) {
-  e.preventDefault();
   let elements = [
     $("#exampleInputName"),
     $("#exampleInputEmail"),
@@ -37,12 +36,14 @@ $(".main-form").submit(function(e) {
   for (i = 0; i < elements.length; i++) {
     if (elements[i].val() == "") {
       errors[i].show();
+      e.preventDefault();
     } else {
       errors[i].hide();
     }
 
     if (!male.checked && !female.checked) {
       $(".gender-error").show();
+      e.preventDefault();
     } else {
       $(".gender-error").hide();
       $(".success-message").show();

@@ -39,6 +39,7 @@ $(".main-form").submit(function(e) {
       e.preventDefault();
     } else {
       errors[i].hide();
+      
     }
 
     if (!male.checked && !female.checked) {
@@ -49,6 +50,9 @@ $(".main-form").submit(function(e) {
       $(".success-message").show();
     }
   }
+
+
+
 });
 
 // form-error-p

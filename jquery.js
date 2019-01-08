@@ -31,6 +31,8 @@ $(".main-form").submit(function(e) {
     $(".subject-error"),
     $(".textarea-error")
   ];
+  document.getElementById("male");
+  document.getElementById("female");
 
   for (i = 0; i < elements.length; i++) {
     if (elements[i].val() == "") {
@@ -38,15 +40,13 @@ $(".main-form").submit(function(e) {
     } else {
       errors[i].hide();
     }
-  }
 
-  document.getElementById("male");
-  document.getElementById("female");
-
-  if (!male.checked && !female.checked) {
-    $(".gender-error").show();
-  } else {
-    $(".gender-error").hide();
+    if (!male.checked && !female.checked) {
+      $(".gender-error").show();
+    } else {
+      $(".gender-error").hide();
+      $(".success-message").show();
+    }
   }
 });
 

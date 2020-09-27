@@ -547,10 +547,10 @@ html {
 
 @keyframes busdrive {
   0% {
-    transform: translateX(-33vh);
+    transform: translateX(-500%);
   }
   100% {
-    transform: translateX(100vw);
+    transform: translateX(100%);
   }
 }
 
